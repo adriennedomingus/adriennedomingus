@@ -74,3 +74,14 @@
     text-align: right;
     font-family: 'Raleway', serif;
 }
+
+.show-post-date {
+  text-align: center;
+  font-family: 'Raleway', serif;
+  font-size: 1.75em;
+}
+
+.post-contents {
+  font-family: 'Raleway', serif;
+  font-size: 1.1em;
+}
