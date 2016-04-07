@@ -56,7 +56,7 @@
 }
 
 .page {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .post-title {
@@ -84,4 +84,12 @@
 .post-contents {
   font-family: 'Raleway', serif;
   font-size: 1.1em;
+}
+
+.connect-image img{
+  width: 100%;
+}
+
+.connect-links {
+  margin-bottom: 50px;
 }

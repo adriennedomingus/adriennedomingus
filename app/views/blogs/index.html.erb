@@ -2,6 +2,7 @@
   <h1 class="page-title">Blog</h1>
 </div>
 <div class="container page">
+  <%= render partial: "partials/connect_links" %>
   <% @blogs.each do |blog| %>
     <p class="post-title"><%= link_to blog.title, blog_path(blog)%></p>
     <p class="post-date"><%= blog.post_date %></p>

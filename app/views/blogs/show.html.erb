@@ -2,6 +2,7 @@
   <h1 class="page-title"> <%= @blog.title %> </h1>
 </div>
 <div class="container page">
+  <%= render partial: "partials/connect_links" %>
   <p class="show-post-date"><%= @blog.post_date %></p>
   <div class="post-contents">
     <%= @blog.content %>
