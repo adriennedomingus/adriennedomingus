@@ -9,10 +9,34 @@
   background: rgba(0,0,0,0);
 }
 
-#site-title {
-
+.brand a {
+  color: #21435A;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25em;
+  border: 2px solid #21435A;
 }
 
+.navbar-link a {
+  color: #21435A;
+  text-decoration: none;
+  margin-top: 4px;
+  margin-top: 4px;
+}
+
+#site-title {
+  font-size: 3em;
+}
+
+.site-headers {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  font-family: 'Raleway', serif;
+}
+
+
 #site-subtitle {
-  
+
 }
