@@ -9,6 +9,6 @@ RSpec.feature "user logs in" do
     fill_in :session_password, with: "password"
     click_on "Log In"
 
-    assert page.has_content?("Log Out")
+    expect(page).to have_content("Log Out")
   end
 end

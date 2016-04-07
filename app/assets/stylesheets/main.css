@@ -1,8 +1,23 @@
-.jumbotron {
+.dashboard-image {
   height: 700px;
   margin-top: -50px;
   background-image: url("https://images.unsplash.com/photo-1443996104801-80c82e789b18?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1175");
   background-size: cover;
+}
+
+.blog-image {
+  height: 400px;
+  margin-top: -150px;
+  background-image: url("https://images.unsplash.com/photo-1443996104801-80c82e789b18?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1175");
+  background-size: cover;
+}
+
+.page-title {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  font-family: 'Raleway', serif;
 }
 
 .navbar {
@@ -38,4 +53,24 @@
 
 .form {
   margin-top: 100px;
+}
+
+.page {
+  margin-top: 60px;
+}
+
+.post-title {
+    display: inline-block;
+    width: 49%;
+    text-align:left;
+    font-family: 'Raleway', serif;
+    font-size: 1.5em;
+    color: #939088;
+}
+
+.post-date {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    font-family: 'Raleway', serif;
 }

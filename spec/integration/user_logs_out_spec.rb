@@ -1,7 +1,7 @@
 require "rails_helper"
 
-RSpec.feature "user logs in" do
-  scenario "user logs in" do
+RSpec.feature "user logs out" do
+  scenario "user logs out" do
     user = User.create(username: "adrienne", password: "password", email: "adrienne.domingus@gmail.com")
 
     visit login_path
@@ -12,6 +12,6 @@ RSpec.feature "user logs in" do
 
     click_on "Log Out"
 
-    refute page.has_content?("Log Out")
+    expect(page).to_not have_content("Log Out")
   end
 end
