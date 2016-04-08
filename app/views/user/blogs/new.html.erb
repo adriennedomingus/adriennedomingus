@@ -1,18 +1,15 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="jumbotron blog-image">
+  <p class="page-title">Write a blog...</p>
+</div>
 <div class="container">
   <%= form_for @blog, url: user_blogs_path do |f| %>
     <%= f.label :title %>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: "form-control" %>
     <%= f.label :date %>
-    <%= f.text_field :date %>
+    <%= f.text_field :date, class: "form-control" %>
     <%= f.label :content %>
-    <%= f.text_area :content %>
-    <%= f.submit %>
+    <%= f.text_area :content, class: "form-control" %>
+    <br>
+    <%= f.submit "Create Blog", class: "btn btn-default" %>
   <% end %>
 </div>

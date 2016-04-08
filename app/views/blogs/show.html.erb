@@ -5,6 +5,9 @@
   <%= render partial: "partials/connect_links" %>
   <p class="show-post-date"><%= @blog.post_date %></p>
   <p class="comment-count">Comments: <%= @blog.comments.count %></p>
+  <% if current_user %>
+    <p class="comment-count"> <%= link_to "Edit", edit_user_blog_path(@blog) %></p>
+  <% end %>
   <div class="post-contents">
     <%= @blog.content.html_safe %>
   </div>
