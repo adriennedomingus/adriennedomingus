@@ -5,8 +5,9 @@
 <br>
 <br>
 <br>
+<br>
 <div class="container">
-  <%= form_for @blog, url: user_blogs_path do |f| %>
+  <%= form_for @blog, url: user_blog_path(@blog) do |f| %>
     <%= f.label :title %>
     <%= f.text_field :title %>
     <%= f.label :date %>

@@ -6,6 +6,6 @@
   <% @blogs.each do |blog| %>
     <p class="post-title"><%= link_to blog.title, blog_path(blog)%></p>
     <p class="post-date"><%= blog.post_date %></p>
-    <p class="post-contents"><%= truncate(blog.content, :length => 500, :separator => ' ') %></p>
+    <p class="post-contents"><%= truncate(blog.content.html_safe, :length => 500, :separator => ' ') %></p>
   <% end %>
 </div>

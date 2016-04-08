@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root to: 'dashboard#show'
   namespace :user do
-    resources :blogs, only: [:new, :create]
+    resources :blogs, only: [:new, :create, :edit, :update]
   end
   resources :blogs, only: [:show, :index]
   resources :comments

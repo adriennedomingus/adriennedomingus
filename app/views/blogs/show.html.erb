@@ -6,7 +6,7 @@
   <p class="show-post-date"><%= @blog.post_date %></p>
   <p class="comment-count">Comments: <%= @blog.comments.count %></p>
   <div class="post-contents">
-    <%= @blog.content %>
+    <%= @blog.content.html_safe %>
   </div>
   <br>
   <p class="show-post-date">Comments (<%= @blog.comments.count %>)</p>
