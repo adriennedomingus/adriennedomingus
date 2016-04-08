@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root to: 'dashboard#show'
-  resources :blogs
+  namespace :user do
+    resources :blogs, only: [:new, :create]
+  end
+  resources :blogs, only: [:show, :index]
   resources :comments
 
   get 'login', to: 'sessions#new'
