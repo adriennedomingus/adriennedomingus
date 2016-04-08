@@ -86,10 +86,31 @@
   font-size: 1.1em;
 }
 
+#intro{
+  font-family: 'Raleway', serif;
+  font-size: 1.3em;
+  text-align: center;
+}
+
 .connect-image img{
   width: 100%;
 }
 
+.values {
+  font-family: 'Raleway', serif;
+  text-align: center;
+}
+
+.value {
+  font-family: 'Raleway', serif;
+  text-align: center;
+  line-height: 190%;
+}
+
 .connect-links {
   margin-bottom: 50px;
+}
+
+.show-list {
+  padding-bottom: 40px;
 }
