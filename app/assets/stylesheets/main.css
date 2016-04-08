@@ -114,3 +114,7 @@
 .show-list {
   padding-bottom: 40px;
 }
+
+.comment-count {
+  text-align: center;
+}

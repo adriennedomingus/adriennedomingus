@@ -4,7 +4,23 @@
 <div class="container page">
   <%= render partial: "partials/connect_links" %>
   <p class="show-post-date"><%= @blog.post_date %></p>
+  <p class="comment-count">Comments: <%= @blog.comments.count %></p>
   <div class="post-contents">
     <%= @blog.content %>
   </div>
+
+  <%= form_for @comment, url: comments_path, method: :post do |f| %>
+    <%= f.label :comment_name %>
+    <%= f.text_field :name %>
+    <%= f.label :comment_content %>
+    <%= f.text_area :content %>
+    <%= hidden_field_tag(:blog_id, @blog.id) %>
+    <%= f.submit "Leave a comment!" %>
+  <% end %>
+
+  <% @blog.comments.each do |comment| %>
+    <%= comment.name %>
+    <%= comment.created_at.strftime("%B %d, %Y") %>
+    <%= comment.content %>
+  <% end %>
 </div>
