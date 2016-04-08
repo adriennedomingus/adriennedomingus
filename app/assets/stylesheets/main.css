@@ -1,3 +1,13 @@
+body > div.jumbotron.blog-image > p {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 60%;
+  font-family: 'Raleway', serif;
+  font-size: 3em;
+
+}
+
 .dashboard-image {
   height: 700px;
   margin-top: -50px;
@@ -10,14 +20,6 @@
   margin-top: -150px;
   background-image: url("https://images.unsplash.com/photo-1443996104801-80c82e789b18?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1175");
   background-size: cover;
-}
-
-.page-title {
-  color: white;
-  text-align: center;
-  position: relative;
-  top: 50%;
-  font-family: 'Raleway', serif;
 }
 
 .navbar {
