@@ -8,19 +8,23 @@
   <div class="post-contents">
     <%= @blog.content %>
   </div>
-
+  <br>
+  <p class="show-post-date">Comments (<%= @blog.comments.count %>)</p>
   <%= form_for @comment, url: comments_path, method: :post do |f| %>
-    <%= f.label :comment_name %>
-    <%= f.text_field :name %>
-    <%= f.label :comment_content %>
-    <%= f.text_area :content %>
+    <%= f.label :comment_name, "Your Name", class: "hidden" %>
+    <%= f.text_field :name, class: "form-control", placeholder: "Your name" %>
+    <%= f.label :comment_content, "Comment", class: "hidden" %>
+    <%= f.text_area :content, class: "form-control", placeholder: "Comment" %>
+    <br>
     <%= hidden_field_tag(:blog_id, @blog.id) %>
-    <%= f.submit "Leave a comment!" %>
+    <%= f.submit "Leave a comment!", class: "btn btn-default" %>
+    <br>
+    <br>
   <% end %>
-
   <% @blog.comments.each do |comment| %>
-    <%= comment.name %>
-    <%= comment.created_at.strftime("%B %d, %Y") %>
-    <%= comment.content %>
+    <p class="comment-name">  <%= comment.name %> </p>
+    <p class= "comment-date"><%= comment.created_at.strftime("%B %d, %Y") %></p>
+    <p class="post-contents"><%= comment.content %></p>
+    <hr>
   <% end %>
 </div>
