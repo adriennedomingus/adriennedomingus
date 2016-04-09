@@ -1,3 +1,7 @@
+body {
+  padding-bottom: 50px;
+}
+
 body > div.jumbotron.blog-image > p {
   color: white;
   position: relative;
@@ -151,5 +155,4 @@ body > div.jumbotron.blog-image > p {
   display: inline-block;
   text-align: center;
   margin-top: 12px;
-  font-family: 'Raleway', serif;
 }
