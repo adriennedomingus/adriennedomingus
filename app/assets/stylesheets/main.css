@@ -6,9 +6,11 @@ body > div.jumbotron.blog-image > p {
   color: white;
   position: relative;
   top: 60%;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
   font-family: 'Raleway', serif;
   font-size: 3em;
-  left: 15%;
 }
 
 .dashboard-image {
@@ -25,9 +27,9 @@ body > div.jumbotron.blog-image > p {
   background-size: cover;
 }
 
-
-.navbar {
+.navbar-default {
   background: rgba(0,0,0,0);
+  border: none;
 }
 
 .navbar-fixed-bottom {
@@ -35,12 +37,25 @@ body > div.jumbotron.blog-image > p {
   color: white;
 }
 
-.brand a {
+#bs-example-navbar-collapse-1 > ul > li > a {
+  font-family: 'Raleway', serif;
+  font-size: 1.25em;
+  color: #21435A;
+}
+
+.navbar-header {
+  margin-top: 10px;
+}
+
+body > nav > div > div.navbar-header > p > a {
+  font-family: 'Raleway', serif;
   color: #21435A;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.75em;
   border: 2px solid #21435A;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .navbar-link a {
@@ -58,7 +73,8 @@ body > div.jumbotron.blog-image > p {
   color: white;
   position: relative;
   text-align: center;
-  left: -12%;
+  width: 50%;
+  margin: 0 auto;
   top: 50%;
   font-family: 'Raleway', serif;
 }
