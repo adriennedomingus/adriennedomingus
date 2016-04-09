@@ -2,6 +2,10 @@ body {
   padding-bottom: 50px;
 }
 
+.previous-post {
+  text-align: right;
+}
+
 body > div.jumbotron.blog-image > p {
   color: white;
   position: relative;
@@ -171,4 +175,8 @@ body > nav > div > div.navbar-header > p > a {
   display: inline-block;
   text-align: center;
   margin-top: 12px;
+}
+
+img {
+  width: 100%;
 }
