@@ -1,8 +1,9 @@
 body {
   padding-bottom: 50px;
 }
+body > div.container.page > div.post-contents > ul:nth-child(17) > li:nth-child(2) > span
 
-.code {
+span.code {
   background-color: #cccfd1;
   font-family: monospace;
   color: #ff422d;
