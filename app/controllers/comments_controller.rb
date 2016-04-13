@@ -5,6 +5,7 @@ class CommentsController < ApplicationController
     if @comment.save
       @blog.comments << @comment
     end
+    CommentNotifier.inform(@blog, @comment)
     redirect_to blog_path(@blog)
   end
 
