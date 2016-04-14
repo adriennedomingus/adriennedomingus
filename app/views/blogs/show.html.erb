@@ -6,7 +6,7 @@
   <p class="show-post-date"><%= @blog.post_date %></p>
   <p class="comment-count">Comments: <%= @blog.comments.count %></p>
   <% if current_user %>
-    <p class="comment-count"> <%= link_to "Edit", edit_user_blog_path(@blog) %></p>
+    <p class="comment-count"> <%= link_to "Edit", edit_user_blog_path(@blog.slug) %></p>
   <% end %>
   <div class="post-contents">
     <%= @blog.content.html_safe %>
@@ -15,12 +15,12 @@
   <div class="row">
     <div class="col-md-6">
       <% if @blog.next %>
-        <p><%= link_to "Next Post", @blog.next, class: "btn btn-default" %></p>
+        <p><%= link_to "Next Post", blog_path(@blog.next.slug), class: "btn btn-default" %></p>
       <% end %>
     </div>
     <div class="col-md-6 previous-post">
       <% if @blog.previous %>
-        <p><%= link_to "Previous Post", @blog.previous, class: "btn btn-default" %></p>
+        <p><%= link_to "Previous Post", blog_path(@blog.previous.slug), class: "btn btn-default" %></p>
       <% end %>
     </div>
   </div>

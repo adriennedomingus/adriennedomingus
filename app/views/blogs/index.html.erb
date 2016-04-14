@@ -4,7 +4,7 @@
 <div class="container page">
   <%= render partial: "partials/connect_links" %>
   <% @blogs.each do |blog| %>
-    <p class="post-title"><%= link_to blog.title, blog_path(blog)%></p>
+    <p class="post-title"><%= link_to blog.title, blog_path(blog.slug)%></p>
     <p class="post-date"><%= blog.post_date %></p>
     <p class="post-contents"><%= raw(blog.content.split(" ")[0..35].join(" ")) %></p>
     <hr>

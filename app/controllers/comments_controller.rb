@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
       @blog.comments << @comment
     end
     CommentNotifier.inform(@blog, @comment).deliver_now
-    redirect_to blog_path(@blog)
+    redirect_to blog_path(@blog.slug)
   end
 
   private
