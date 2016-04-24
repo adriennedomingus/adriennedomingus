@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
   resources :blogs, only: [:index, :show], param: :slug
   resources :comments
+  resources :projects, only: [:show, :index], param: :slug
 
   get 'login', to: 'sessions#new'
   post '/login', to: 'sessions#create'

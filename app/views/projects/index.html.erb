@@ -1,0 +1,11 @@
+<div class="jumbotron blog-image">
+  <p class="page-title"> Portfolio</p>
+</div>
+<div class="container">
+  <% @projects.each do |project| %>
+    <div class="col-md-4">
+        <h3><%= link_to project.name, project_path(project.slug)%></h3>
+        <%= link_to image_tag("#{project.screenshot}"), project_path(project.slug) %>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,12 @@
+<div class="jumbotron blog-image">
+  <p class="page-title"> <%= @project.name %> </p>
+</div>
+
+<div class="container page">
+  <div class="row">
+    <%= link_to "Code", @project.code, class: "col-md-3 col-md-offset-2 btn btn-default" %>
+    <%= link_to "Production", @project.production, class: "col-md-3 col-md-offset-2 btn btn-default" %>
+  </div>
+  <br>
+  <%= @project.description %>
+</div>
