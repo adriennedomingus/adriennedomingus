@@ -9,6 +9,8 @@
     <%= f.text_field :date, class: "form-control" %>
     <%= f.label :content %>
     <%= f.text_area :content, class: "form-control" %>
+    <%= f.label :project %>
+    <%= select("blog", :project_id, Project.all.collect { |p| [p.name, p.id]}, {prompt: "None"}, class: 'form-control' )%>
     <br>
     <%= f.submit "Create Blog", class: "btn btn-default" %>
   <% end %>

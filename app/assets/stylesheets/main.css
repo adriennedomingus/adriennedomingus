@@ -186,3 +186,12 @@ body > nav > div > div.navbar-header > p > a {
 img {
   width: 100%;
 }
+
+.section-header {
+  font-family: 'Raleway', serif;
+  text-align: center;
+}
+
+.internal-header {
+  font-family: 'Raleway', serif;
+}

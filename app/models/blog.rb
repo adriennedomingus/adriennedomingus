@@ -1,5 +1,6 @@
 class Blog < ActiveRecord::Base
   has_many :comments
+  belongs_to :project
   before_save :set_slug
 
   def post_date

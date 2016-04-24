@@ -28,6 +28,6 @@ class User::BlogsController < User::BaseController
   private
 
   def blog_params
-    params.require(:blog).permit(:title, :date, :content)
+    params.require(:blog).permit(:title, :date, :content, :project_id)
   end
 end

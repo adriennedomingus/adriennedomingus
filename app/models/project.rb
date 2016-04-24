@@ -1,4 +1,5 @@
 class Project < ActiveRecord::Base
+  has_many :blogs
   before_save :set_slug
 
   def set_slug
