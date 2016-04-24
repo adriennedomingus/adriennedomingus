@@ -4,6 +4,9 @@
 
 <div class="container page">
   <div class="row">
+    <% if current_user %>
+      <%= link_to "Edit", edit_user_project_path(@project)%>
+    <% end %>
     <%= link_to "Code", @project.code, class: "col-md-3 col-md-offset-2 btn btn-default" %>
     <%= link_to "Production", @project.production, class: "col-md-3 col-md-offset-2 btn btn-default" %>
   </div>
