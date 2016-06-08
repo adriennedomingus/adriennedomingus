@@ -4,6 +4,6 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @projects = Project.all
+    @projects = Project.order(:rank)
   end
 end

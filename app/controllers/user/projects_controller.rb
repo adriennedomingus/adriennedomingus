@@ -27,6 +27,6 @@ class User::ProjectsController < User::BaseController
 
   private
     def project_params
-      params.require(:project).permit(:name, :description, :production, :code, :screenshot)
+      params.require(:project).permit(:name, :description, :production, :code, :screenshot, :rank)
     end
 end
