@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
     <% @projects.each do |project| %>
-      <div class="col-md-4">
+      <div class="col-md-4 project-block">
           <h3 class="section-header"><%= link_to project.name, project_path(project.slug)%></h3>
           <%= link_to image_tag("#{project.screenshot}"), project_path(project.slug) %>
       </div>

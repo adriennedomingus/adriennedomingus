@@ -195,3 +195,7 @@ img {
 .internal-header {
   font-family: 'Raleway', serif;
 }
+
+.project-block {
+  height: 300px;
+}
