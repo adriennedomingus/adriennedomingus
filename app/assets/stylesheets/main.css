@@ -199,3 +199,8 @@ img {
 .project-block {
   height: 300px;
 }
+
+@media (max-width: 1093px) and (min-width: 500px){
+  .project-block {
+    height: 500px;
+  }
