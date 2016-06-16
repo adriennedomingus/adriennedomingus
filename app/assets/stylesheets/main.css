@@ -140,7 +140,7 @@ body > nav > div > div.navbar-header > p > a {
   font-size: 1.1em;
 }
 
-#intro{
+.intro{
   font-family: 'Raleway', serif;
   font-size: 1.3em;
   text-align: center;
@@ -198,6 +198,11 @@ img {
 
 .project-block {
   height: 300px;
+}
+
+.bold {
+  font-weight: 900;
+  font-size: 1.15em;
 }
 
 @media (max-width: 1093px) and (min-width: 500px){
