@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: 'dashboard#show'
+  
   namespace :user do
     resources :blogs, only: [:new, :create, :edit, :update], param: :slug
     resources :projects, only: [:new, :create, :edit, :update]
@@ -11,4 +12,6 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete "/logout", to: "sessions#destroy"
+
+  match "/404", :to => "errors#not_found", :via => :all
 end

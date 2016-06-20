@@ -28,7 +28,8 @@ module Adriennedomingus
       authentication:       'plain',
       enable_starttls_auto: true
     }
-    
+
     config.active_record.raise_in_transactional_callbacks = true
+    config.exceptions_app = self.routes
   end
 end
