@@ -1,6 +1,7 @@
 class BlogsController < ApplicationController
   def index
-    @blogs = Blog.order(date: :desc)
+    @page = params[:page].to_i
+    @blogs = Blog.paginate(:page => @page, :per_page => 10).order(date: :desc)
   end
 
   def show

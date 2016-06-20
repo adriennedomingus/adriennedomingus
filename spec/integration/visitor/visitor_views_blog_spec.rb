@@ -5,7 +5,7 @@ RSpec.feature "visitor views specific blog" do
     blog1 = Blog.create(title: "First blog title", content: "some content", date: Date.new(2016, 03, 17), slug: "first-blog-title")
     Blog.create(title: "Second blog title", content: "some more content", date: Date.new(2016, 03, 24), slug: "blog-title")
 
-    visit blogs_path
+    visit blogs_path(:page => 1)
     click_on blog1.title
     expect(page).to have_content(blog1.title)
     expect(page).to have_content("March 17, 2016")

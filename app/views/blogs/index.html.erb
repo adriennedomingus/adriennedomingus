@@ -9,4 +9,15 @@
     <p class="post-contents"><%= raw(blog.content.split(" ")[0..35].join(" ")) %></p>
     <hr>
   <% end %>
+  <div class="row">
+    <div class="col-md-6">
+      <% unless @page == 1 %>
+        <p><%= link_to "Newer Posts", blogs_path(page: @page - 1), class: "btn btn-default" %></p>
+      <% end %>
+    </div>
+    <div class="col-md-6 previous-post">
+      <% if Blog.count < ((@page + 1) * 10) && Blog.count > (@page  * 10)%>
+        <p><%= link_to "Older Posts", blogs_path(page: @page + 1), class: "btn btn-default" %></p>
+      <% end %>
+    </div>
 </div>
