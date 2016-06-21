@@ -7,5 +7,6 @@ class BlogsController < ApplicationController
   def show
     @blog = Blog.find_by(slug: params[:slug])
     @comment = Comment.new
+    render file: "/app/views/errors/not_found.html.erb" unless @blog
   end
 end
