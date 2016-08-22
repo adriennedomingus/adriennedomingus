@@ -3,7 +3,7 @@
 </div>
 <div class="container page">
   <%= render partial: "partials/connect_links" %>
-  <p class="show-post-date"><%= @blog.post_date %></p>
+  <p class="show-post-date postmetadata"><span class="updated"><%= @blog.post_date %></span></p>
   <p class="comment-count">Comments: <%= @blog.comments.count %></p>
   <% if current_user %>
     <p class="comment-count"> <%= link_to "Edit", edit_user_blog_path(@blog.slug) %></p>
