@@ -12,6 +12,10 @@ span.code {
   text-align: right;
 }
 
+.content {
+  display: none;
+}
+
 body > div.jumbotron.blog-image > p {
   color: white;
   position: relative;
