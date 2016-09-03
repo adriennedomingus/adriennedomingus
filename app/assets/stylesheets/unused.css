@@ -1,0 +1,156 @@
+
+/*body > div.tron.blog-image > p {
+  color: white;
+  position: relative;
+  top: 60%;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  font-family: 'Raleway', serif;
+  font-size: 3em;
+}*/
+
+/*.blog-image {
+  height: 400px;
+  margin-top: -150px;
+  background-image: url("https://images.unsplash.com/photo-1443996104801-80c82e789b18?crop=entropy&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1175");
+  background-size: cover;
+}
+
+.navbar-default {
+  background: rgba(0,0,0,0);
+  border: none;
+}
+
+.navbar-fixed-bottom {
+  background-color: #21435A;
+  color: white;
+}*/
+
+/*#bs-example-navbar-collapse-1 > ul > li > a {
+  font-family: 'Raleway', serif;
+  font-size: 1.25em;
+  color: #21435A;
+}
+
+.navbar-header {
+  margin-top: 10px;
+}
+
+body > nav > div > div.navbar-header > p > a {
+  font-family: 'Raleway', serif;
+  color: #21435A;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.75em;
+  border: 2px solid #21435A;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.navbar-link a {
+  color: #21435A;
+  text-decoration: none;
+  margin-top: 4px;
+  margin-top: 4px;
+}
+
+.form {
+  margin-top: 100px;
+}
+
+.page {
+  margin-top: 20px;
+}
+
+.post-title {
+    display: inline-block;
+    width: 49%;
+    text-align:left;
+    font-family: 'Raleway', serif;
+    font-size: 1.5em;
+    color: #939088;
+}
+
+.post-date {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    font-family: 'Raleway', serif;
+}
+
+.comment-name {
+  display: inline-block;
+  width: 49%;
+  text-align:left;
+  font-family: 'Raleway', serif;
+  font-size: 1.5em;
+  color: #939088;
+}
+
+.comment-date {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  font-family: 'Raleway', serif;
+}
+
+.show-post-date {
+  text-align: center;
+  font-family: 'Raleway', serif;
+  font-size: 1.75em;
+}
+
+.post-contents {
+  font-family: 'Raleway', serif;
+  font-size: 1.1em;
+}
+
+.values {
+  font-family: 'Raleway', serif;
+  text-align: center;
+}
+
+.value {
+  font-family: 'Raleway', serif;
+  text-align: center;
+  line-height: 190%;
+}
+
+.show-list {
+  padding-bottom: 40px;
+}
+
+.comment-count {
+  text-align: center;
+}
+
+.footer li {
+  display: inline-block;
+  text-align: center;
+  margin-top: 12px;
+}
+
+
+.section-header {
+  font-family: 'Raleway', serif;
+  text-align: center;
+}
+
+.internal-header {
+  font-family: 'Raleway', serif;
+}
+
+.project-block {
+  height: 300px;
+}*/
+
+/*span.code {
+  background-color: #cccfd1;
+  font-family: monospace;
+  color: #ff422d;
+}
+
+.previous-post {
+  text-align: right;
+}*/
